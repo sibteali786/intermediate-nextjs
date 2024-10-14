@@ -28,6 +28,7 @@ const SignupForm = () => {
         required
       />
       <SubmitButton label={'Sign up'} />
+      {formState?.message && <p>{formState.message}</p>}
       <div>
         <Link href="/signin">{`Already have an account?`}</Link>
       </div>
